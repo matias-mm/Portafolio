@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/portafolio.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo">
+            <h1>
+                M
+                M
+            </h1>
+        </div>
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mi</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            
+        </nav>
+
+    </header>
+    <main>
+
+
+        <!---AQUI VA EL INICIO-->
+        
+        <section class="inicio" id="inicio">
+            <h1>Hola soy Matias Mansilla</h1>
+            <p>
+                Estudiante de 4 semestre de la carrera Ingenieria en informatica, mencion Ciencas
+                de datos, en Duocu UC Puerto Montt. Me interesa el desarrollo y analisis de datos
+                y la creacion de soluciones tecnologias que ayudan a resolver problemas de manera 
+                eficiente.<br>
+                En este portafolio podras conocer mas sobre mi, mis habilidades y algunos proyectos
+                que he desarrollado durante mi formacion en la carrera.
+
+                
+            </p>
+        </section>
+
+        
+
+        <!--AQUI VA LA INFORMACION SOBRE MI--->
+
+        <section id="sobre-mi" class="sobre-mi">
+
+             <!-- El contenedor controla el bloque general -->
+            <div class="contenedor-sobre-mi">
+        
+        <!-- Al usar inline, el título actúa como el inicio del párrafo -->
+                <h1 class="titulo-sobre-mi">Sobre mi </h1>
+        
+        <!-- El texto continúa inmediatamente al lado y cae hacia abajo -->
+                <span class="texto-descripcion">
+                Soy estudiante del instituto profesional Duoc UC, cursando la carrera de ingeniería en informática mención ciencia de datos. 
+                Me apasiona el desarrollo de soluciones interactivas y análisis de información.
+                </span>
+        
+            </div>
+
+        </section>
+
+
+        <!---AQUI VA LA INFORMACION SOBRE LAS HABILIDADES-->
+
+        <section id="habilidades" class="habilidades">
+
+            <div class="contenedor-habilidades">
+                <h1 class="titulo-habilidades">Habilidades</h1>
+                <p>
+                    Habilidades tecnicas adquiridas 
+                    Desarrollo de Software FullStack: Capacidad de programar en los 2 lados de la programacion,
+                    utilizando lenguajes clave como Java para el Backend usando la arquitectura de microservicios 
+                    y html, css y javaScript para el Fronted diseñando la vista de la pagina.
+
+                    Modelamiento y Gestion de base de datos: Habilidad para diseñar, consultar y administrar bases
+                    de datos relacionaes y aplicadas para soportar sistemas de software corporativos.
+
+                    Fundamentos de Cloud Computing: Capacidad para comprender e interactuar con infraestructuras,
+                    despliegues y servicios en la nube.
+                    
+                </p>
+
+            </div>
+            
+        </section>
+
+
+        
+        <!---AQUI VA TODO LA INFORMACION SOBRE PROYECTOS-->
+
+        <section id="proyectos" class="proyectos">
+            <div class="titulo-seccion">
+                <p class="subtitulo">Proyectos</p>
+            </div>
+
+
+            <div class="contenedor-cards">
+
+                
+                <article class="card">
+
+                    <img 
+                        src="image/hospital.jpg" 
+                        alt="Vista proyecto backend hospital"
+                        class="imagen-hospital"
+                
+                
+                    >
+                    <span class="card-numero">01</span>
+                    <h3>PROYECTO BACKEND DE HOSPITAL</h3>
+                    <p>
+                        El proyecto consiste en el desarrollo de una infraestructura backend robusta y centralizada 
+                        para optimizar la gestión operativa y financiera de un centro médico. El sistema está diseñado 
+                        para resolver la perdida de información y automatizar la comunicación con los usuarios.                  
+                    </p>
+                </article>
+
+                <article class="card">
+
+                    <img 
+                        src="image/machien-learning.jpg" 
+                        alt="vista trabajo Machine learning"
+                        class="imagen-machine"
+                    
+                    >
+                    <span class="card-numero">02</span>
+                    <h3>PROYECTO MACHINE LEARNING</h3>
+                    <p>
+                        aqui va informacion sobre este proyecto
+                    </p>
+                </article>
+
+                <article class="card">
+
+                    <img 
+                        src="image/deep-learning.jpg" 
+                        alt="vista trabajo deep learning"
+                        class="imagen-deep-learning"
+                    
+                    >
+                    <span class="card-numero">03</span>
+                    <h3>PROYECTO DEEP LEARNING </h3>
+                    <p>Aqui va informacion sobre este proyecto</p>
+                </article>
+                
+
+            </div>
+        </section>
+
+        <!---AQUI VA TODO LA INFORMACION SOBRE CONTACTO y el formulario-->
+        <section id="contacto" class="contacto">
+            <footer class="formulario">
+                <h1>Contactame</h1>
+                <p>Completa el formulario</p>
+
+                <form 
+                    id="formularioContacto"
+                    action="https://formsubmit.co/mat.mansillam@duocuc.cl"
+                    method="POST"
+                >
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde mi portafolio"> 
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+
+                        <input 
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ingresar su nombre"
+                            required
+                            >
+                        <small id="errorNombre" class="error"></small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo</label>
+
+                        <input 
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="nombre@correo.cl "
+                            required
+                            >
+
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+
+                        <textarea 
+                            id="mensaje"
+                            name="mensaje" 
+                            placeholder="Escriba su mensaje"
+                            required
+                            
+                        ></textarea>
+
+                        <small id="errroMensaje" class="error"></small>
+                    </div>
+
+                    <button type="submit">Enviar mensaje</button>
+
+                    <div id="resultado" class="resultado"></div>
+
+
+                </form>
+                
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    
+</body>
+</html>
