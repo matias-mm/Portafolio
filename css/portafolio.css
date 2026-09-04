@@ -161,7 +161,7 @@ es nav a por que esas letras estan el ejemplo <a href="#inicio">Inicio</a>
 /* Texto de descripción en reposo */
 .texto-descripcion {
     display: inline;        /* Se pega al título y envuelve hacia abajo de forma fluida */
-    color: grey;         /* Un gris más oscuro para el texto secundario  #71717a*/
+    color: white;         /* Un gris más oscuro para el texto secundario  #71717a*/
     font-size: 1.2rem;      /* Mismo tamaño para simular un párrafo continuo */
     font-weight: 20;
     transition: color 0.4s ease;
