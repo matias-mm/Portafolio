@@ -1,12 +1,12 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/portafolio.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
 </head>
 <body>
@@ -36,11 +36,11 @@
             <h1>Hola soy Matias Mansilla</h1>
             <p>
                 Estudiante de 4 semestre de la carrera Ingenieria en informatica, mencion Ciencas
-                de datos, en Duocu UC Puerto Montt. Me interesa el desarrollo y analisis de datos
+                de datos, en Duoc UC Puerto Montt. Me interesa el desarrollo y analisis de datos
                 y la creacion de soluciones tecnologias que ayudan a resolver problemas de manera 
                 eficiente.<br>
                 En este portafolio podras conocer mas sobre mi, mis habilidades y algunos proyectos
-                que he desarrollado durante mi formacion en la carrera.
+                que he desarrollado en equipo durante mi formacion en la carrera.
 
                 
             </p>
@@ -59,10 +59,12 @@
                 <h1 class="titulo-sobre-mi">Sobre mi </h1>
         
         <!-- El texto continúa inmediatamente al lado y cae hacia abajo -->
-                <span class="texto-descripcion">
+                <p class="texto-descripcion">
                 Soy estudiante del instituto profesional Duoc UC, cursando la carrera de ingeniería en informática mención ciencia de datos. 
-                Me apasiona el desarrollo de soluciones interactivas y análisis de información.
-                </span>
+                Me apasiona el desarrollo de soluciones interactivas y análisis de información. Me considero una persona responsable, constante y
+                con interes de seguir aprendiendo nuevas tecnologias y herramientas. Mi objetivo es seguir fortaleciendo mis habilidades en desarrollo de 
+                software y ciencias de datos.
+                </p>
         
             </div>
 
@@ -75,17 +77,14 @@
 
             <div class="contenedor-habilidades">
                 <h1 class="titulo-habilidades">Habilidades</h1>
-                <p>
-                    Habilidades tecnicas adquiridas 
-                    Desarrollo de Software FullStack: Capacidad de programar en los 2 lados de la programacion,
-                    utilizando lenguajes clave como Java para el Backend usando la arquitectura de microservicios 
-                    y html, css y javaScript para el Fronted diseñando la vista de la pagina.
+                <p class="texto-habilidades">
+                    Habilidades tecnica adquiridas durante el progreso de la carrera. Capacidad de programar arquitecturas 
+                    de microservicios utilizando java como lenguaje principal para el Backend, también el 
+                    modelamiento y Gestion de base de datos para diseñar, consultar y administrar base de datos relacionales.
+                    Habilidades adicinales en curso: html, css y JavaScript para el desarrollo y diseño de vistas para las
+                    paginas web, y el desarrollo de aplicaciones móviles.
 
-                    Modelamiento y Gestion de base de datos: Habilidad para diseñar, consultar y administrar bases
-                    de datos relacionaes y aplicadas para soportar sistemas de software corporativos.
 
-                    Fundamentos de Cloud Computing: Capacidad para comprender e interactuar con infraestructuras,
-                    despliegues y servicios en la nube.
                     
                 </p>
 
@@ -111,7 +110,7 @@
                     <img 
                         src="image/hospital.jpg" 
                         alt="Vista proyecto backend hospital"
-                        class="imagen-hospital"
+                        class="imagen-proyecto"
                 
                 
                     >
@@ -122,6 +121,19 @@
                         para optimizar la gestión operativa y financiera de un centro médico. El sistema está diseñado 
                         para resolver la perdida de información y automatizar la comunicación con los usuarios.                  
                     </p>
+                    <!---target = "_blank" hace que el enlace se habra en una pestaña nueva-->
+                    <!---noopener  = evita que la página nueva pueda controlar o modificar la pestaña donde está el portafolio.-->
+                    <!---noreferrer =evita enviar información sobre desde qué página se abrió el enlace.-->
+                    <a 
+                        href="https://github.com/matias-mm/microservicios-hospital"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="boton-proyecto"
+                    
+                    >
+                        Ver proyecto en Github
+                    </a>
+
                 </article>
 
                 <article class="card">
@@ -129,7 +141,7 @@
                     <img 
                         src="image/machien-learning.jpg" 
                         alt="vista trabajo Machine learning"
-                        class="imagen-machine"
+                        class="imagen-proyecto"
                     
                     >
                     <span class="card-numero">02</span>
@@ -144,7 +156,7 @@
                     <img 
                         src="image/deep-learning.jpg" 
                         alt="vista trabajo deep learning"
-                        class="imagen-deep-learning"
+                        class="imagen-proyecto"
                     
                     >
                     <span class="card-numero">03</span>
@@ -158,8 +170,8 @@
 
         <!---AQUI VA TODO LA INFORMACION SOBRE CONTACTO y el formulario-->
         <section id="contacto" class="contacto">
-            <footer class="formulario">
-                <h1>Contactame</h1>
+            <div class="formulario">
+                <h1>Contacto</h1>
                 <p>Completa el formulario</p>
 
                 <form 
@@ -194,6 +206,7 @@
                             placeholder="nombre@correo.cl "
                             required
                             >
+                        <small id="errorCorreo" class="error"></small>
 
                     </div>
 
@@ -208,7 +221,7 @@
                             
                         ></textarea>
 
-                        <small id="errroMensaje" class="error"></small>
+                        <small id="errorMensaje" class="error"></small>
                     </div>
 
                     <button type="submit">Enviar mensaje</button>
@@ -218,11 +231,16 @@
 
                 </form>
                 
-            </footer>
+            </div>
 
         </section>
 
     </main>
+    <footer class="footer">
+        <p>
+          © 2026 Matías Mansilla - Portafolio Profesional  
+        </p>
+    </footer>
 
 
     
