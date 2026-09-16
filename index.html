@@ -56,7 +56,7 @@
             <div class="contenedor-sobre-mi">
         
         <!-- Al usar inline, el título actúa como el inicio del párrafo -->
-                <h1 class="titulo-sobre-mi">Sobre mi </h1>
+                <h2 class="titulo-sobre-mi">Sobre mi </h2>
         
         <!-- El texto continúa inmediatamente al lado y cae hacia abajo -->
                 <p class="texto-descripcion">
@@ -76,7 +76,7 @@
         <section id="habilidades" class="habilidades">
 
             <div class="contenedor-habilidades">
-                <h1 class="titulo-habilidades">Habilidades</h1>
+                <h2 class="titulo-habilidades">Habilidades</h2>
                 <p class="texto-habilidades">
                     Habilidades tecnica adquiridas durante el progreso de la carrera. Capacidad de programar arquitecturas 
                     de microservicios utilizando java como lenguaje principal para el Backend, también el 
@@ -98,7 +98,7 @@
 
         <section id="proyectos" class="proyectos">
             <div class="titulo-seccion">
-                <p class="subtitulo">Proyectos</p>
+                <h2 class="subtitulo">Proyectos</h2>
             </div>
 
 
@@ -135,34 +135,6 @@
                     </a>
 
                 </article>
-
-                <article class="card">
-
-                    <img 
-                        src="image/machien-learning.jpg" 
-                        alt="vista trabajo Machine learning"
-                        class="imagen-proyecto"
-                    
-                    >
-                    <span class="card-numero">02</span>
-                    <h3>PROYECTO MACHINE LEARNING</h3>
-                    <p>
-                        aqui va informacion sobre este proyecto
-                    </p>
-                </article>
-
-                <article class="card">
-
-                    <img 
-                        src="image/deep-learning.jpg" 
-                        alt="vista trabajo deep learning"
-                        class="imagen-proyecto"
-                    
-                    >
-                    <span class="card-numero">03</span>
-                    <h3>PROYECTO DEEP LEARNING </h3>
-                    <p>Aqui va informacion sobre este proyecto</p>
-                </article>
                 
 
             </div>
@@ -171,13 +143,15 @@
         <!---AQUI VA TODO LA INFORMACION SOBRE CONTACTO y el formulario-->
         <section id="contacto" class="contacto">
             <div class="formulario">
-                <h1>Contacto</h1>
-                <p>Completa el formulario</p>
+                <h2>Contacto</h2>
+                <p> Completa el formulario</p>
+                
 
                 <form 
                     id="formularioContacto"
                     action="https://formsubmit.co/mat.mansillam@duocuc.cl"
                     method="POST"
+                    novalidate
                 >
                     <input type="hidden" name="_subject" value="Nuevo mensaje desde mi portafolio"> 
                     <input type="hidden" name="_captcha" value="false">
