@@ -106,7 +106,7 @@ Repositorio:
 
 ## Estructura del proyecto
 
-text
+```text
 portafolio/
 │
 ├── index.html
