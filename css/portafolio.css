@@ -1,111 +1,102 @@
-:root{
-    --color-principal : #2563eb;
-    --color-principal-oscuro: #1d4ed8;
+:root {
     --color-texto: #172033;
-    --color-texto-secundario: #64748b;
     --color-fondo: #f8fafc;
     --color-blanco: #fff;
     --color-borde: #e2e8f0;
-    --radio: 12px;   
 
-    --color-texto-a: red;
-    --color-texto-b: purple;
-    --color-texto-c: orange;
-    --color-texto-plomo: gray;
     --color-steam: #171a21;
-    --color-steam-2: #2a475e;
-    --color-steam-3: #1b2838;
-    --color-steam-4: #2a475e;
 
-    --color-azul-oceano: #006994;
-    --color-azul-zafiro: #0f52ba;
-    --color-azul-cielo: #87ceeb;
-
-    --color-azul-d: #060531;
-
-    
+    --radio: 12px;
 }
 
 
-*{
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+   ===================================================== */
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;/*facilita controlar tamaños*/
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-texto);
     background-color: black;
     line-height: 1.5;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     line-height: 1.2;
 }
 
-/*modifica y mueve las letrar Inicio -sobre mi etc*/
-.encabezado{
+
+/* =====================================================
+   ENCABEZADO
+   ===================================================== */
+
+.encabezado {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 2%;
-
 }
 
 
-/*configuracion del logo*/
-.logo{
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.logo {
     font-size: 1.6rem;
     font-weight: bold;
     color: white;
 }
 
-/*configura las letras*/
-.logo h1{
+.logo h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 1px 10%;
     font-weight: bold;
 }
 
 
+/* =====================================================
+   NAVEGACIÓN
+   ===================================================== */
 
-.nav{
+.nav {
     display: flex;
-    gap: 20px; /*distancia entre las palabras*/
+    gap: 20px;
 }
 
-/*aqui va la modificacion para las letras inicio-sobre mi-habilidades-proyectos- contacto
-es nav a por que esas letras estan el ejemplo <a href="#inicio">Inicio</a>
-*/
-.nav a{
-    
+.nav a {
     display: inline-block;
-    color: white; /* Letras blancas */
-    padding: 10px 15px; /* Espaciado interno (arriba/abajo izquierdo/derecho) */
-    border-radius: 10px; /* Bordes redondeados suaves */
-    font-family: Arial, Helvetica, sans-serif; /* Tipografía limpia */
-    font-weight: bold; /* Letras en negrita */
-    text-decoration: none; /* Quita la línea de subrayado típica de los enlaces */
-    font-size: 16px; /*tamaño de las letras*/
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid var(--color-steam);
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
     transition: background-color 0.3s ease;
-    border: 2px solid var(--color-steam); 
-
 }
- 
-/*cambia el color al pasar por las letrar Inicio - sobre mi etc*/
-.nav a:hover{
-    background-color: rgb(18, 17, 17); /*pasa por las letras  */
+
+.nav a:hover {
+    background-color: rgb(18, 17, 17);
     transform: translateY(-3px);
     box-shadow: 0 5px 8px rgba(18, 17, 17, 0.416);
-    
 }
 
 
+/* =====================================================
+   INICIO
+   ===================================================== */
 
-
-/*AQUI VA LAS MODIFICACIONES VISUALES PARA EL INICIO */
-.inicio{
+.inicio {
     padding: 100px 8%;
 }
 
@@ -114,109 +105,95 @@ es nav a por que esas letras estan el ejemplo <a href="#inicio">Inicio</a>
     margin-bottom: 20px;
     color: white;
 }
-.inicio h2{
-    max-width: 650px;
-    color: white;
-    font-size: 1rem;
-
-}
 
 .inicio p {
     max-width: 650px;
     color: var(--color-borde);
     font-size: 1rem;
-    
-
 }
 
 
-/* AQUI VA LAS MODIFICACIONES EL LA PARTE SOBRE MI*/
+/* =====================================================
+   SOBRE MÍ
+   ===================================================== */
 
-/* Estilos para la sección Sobre Mí */
 .sobre-mi {
-    padding: 100px 8%;
     display: flex;
+    padding: 100px 8%;
 }
 
-/* Contenedor principal */
 .contenedor-sobre-mi {
-    max-width: 500px;       /* Ancho óptimo de Vercel para lectura cómoda */
-    line-height: 1.6;       /* Espaciado perfecto entre las líneas que caen abajo */
+    max-width: 500px;
+    line-height: 1.6;
     cursor: pointer;
 }
 
-/* Título principal en reposo */
 .titulo-sobre-mi {
-    display: inline;        /* Se alinea en la misma línea que el texto */
-    color: white;         /* El color del texto Sobre mi  */
+    display: inline;
+    color: white;
     font-size: 30px;
-    margin-bottom: 20px;
     font-weight: 700;
     margin: 0;
     padding-right: 6px;
-    transition: color 0.4s ease;
 }
 
 
-/* Texto de descripción en reposo */
-.texto-descripcion {
-    display: inline;        /* Se pega al título y envuelve hacia abajo de forma fluida */
-    color: grey;         /* Un gris más oscuro para el texto secundario  #71717a*/
-    font-size: 1.2rem;      /* Mismo tamaño para simular un párrafo continuo */
-    font-weight: 20;
-    transition: color 0.4s ease;
+/* Texto oculto inicialmente */
 
-        
+.texto-descripcion {
+    display: inline;
+    color: grey;
+    font-size: 1.2rem;
+    font-weight: 20;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.6s ease, visibility 0.9s ease; /*los segundos que demora en mostrarse la informacion*/
+    transition: opacity 0.6s ease, visibility 0.9s ease;
 }
 
-/*EL EFECTO VERCEL: Al pasar el mouse por el contenedor */
 
-/* El título pasa a blanco brillante */
-.contenedor-sobre-mi:hover .titulo-sobre-mi {
-    color: white; /*cambia el color al pasar el cursor por la palabra Sobre Mi*/
-}
+/* Mostrar texto al pasar el cursor */
 
-/* El texto de Duoc UC pasa a un gris claro/blanco nítido */
 .contenedor-sobre-mi:hover .texto-descripcion {
     opacity: 1;
-    visibility: visible;/*muestra el texto al pasar el cursor por la palabra Sobre mi*/
+    visibility: visible;
 }
 
 
-/*AQUI VA LAS MODIFICACIONES VISUALES PARA HABILIDADES */
+/* =====================================================
+   HABILIDADES
+   ===================================================== */
 
-.habilidades{/*aqui de ajusta para dejar el titulo y informacion centrada*/
+.habilidades {
     display: flex;
-    justify-content: flex-end;/*PARTE IMPORTANTE lleva todo a la derecha*/
-    padding: 80px 8%;/*80px separacion con los section, ajusta el espacio del texto */
-    
+    justify-content: flex-end;
+    padding: 80px 8%;
 }
-.contenedor-habilidades{
+
+.contenedor-habilidades {
     width: 65%;
     display: flex;
     gap: 40px;
     align-items: flex-start;
 }
 
-.habilidades h1{
+.habilidades h2 {
     font-size: 30px;
     color: white;
-    
 }
 
-.habilidades p{
+.habilidades p {
     color: var(--color-blanco);
     font-size: 1rem;
 }
 
 
-@media (max-width: 768px) {/*se ajusta al los dispositivos moviles*/
+/* Adaptación de habilidades para móviles */
+
+@media (max-width: 768px) {
 
     .contenedor-habilidades {
         width: 100%;
+
         flex-direction: column;
     }
 
@@ -227,139 +204,138 @@ es nav a por que esas letras estan el ejemplo <a href="#inicio">Inicio</a>
 }
 
 
-/*AQUI VA LAS MODIFICACIONES VISUALES PARA EL PROYECTOS */
-.proyectos{
+/* =====================================================
+   PROYECTOS
+   ===================================================== */
+
+.proyectos {
     padding: 80px 8%;
 }
 
-.titulo-seccion{/*separacion con el titulo PROYECTOS*/
+.titulo-seccion {
+    margin-top: 8px;
     margin-bottom: 40px;
+    font-size: 1.2rem;
 }
 
-
-.subtitulo{
-    color: var(--color-borde);
+.subtitulo {
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
-    color: white;
-    letter-spacing: 1px;}
-    
-
-    .titulo-seccion{
-        margin-top: 8px;
-        font-size: 1.2rem;
-    }
-
-    .contenedor-cards{
-        display: flex;
-        gap: 24px;
-        flex-wrap: wrap;
-    }
-
-    .card{
-        flex: 1;
-        min-height: 500px;/*profundidad del cuadro*/
-        padding: 30px; /*distancia entre el cuadro con el texto*/
-        border-radius: var(--radio);
-        border: 2px solid var(--color-steam); /*agrega color por los bordes de las cartas*/      
-        box-shadow: 0 4px 14px rgba(26, 28, 26, 0.7);
-        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    }
-    
-    .card:hover{
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(236, 238, 236, 0.981); /*controla el color de fondo de las cartas*/
-          
-    }
-    .card p{
-        color: var(--color-fondo);
-    }
-    .card h3{
-        color: white;
-    }
-
-    .card-numero{
-        color: grey;
-    }
-
-    /*todas las imagenes tienen las mismas dimensiones*/
-    .imagen-proyecto{
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-    
-    .boton-proyecto{
-        display: inline-block;
-        color: white; /* Letras blancas */
-        /*padding: 5px 15px; /* Espaciado interno (arriba/abajo izquierdo/derecho) */
-        padding: 12px 22%;
-        border-radius: 10px; /* Bordes redondeados suaves */
-        font-family: Arial, Helvetica, sans-serif; /* Tipografía limpia */
-        font-weight: bold;
-        text-decoration: none; /* Quita la línea de subrayado típica de los enlaces */
-        font-size: 16px; /*tamaño de las letras*/
-        border: 2px solid var(--color-steam); 
-        
-    }
-    .boton-proyecto:hover{
-        /*cambia el color al pasar por las letrar Inicio - sobre mi etc*/
-        background-color: rgb(18, 17, 17); /*pasa por las letras  */
-        transform: translateY(-3px);
-        box-shadow: 0 5px 8px rgba(18, 17, 17, 0.416);
-    
-    }
+    letter-spacing: 1px;
+}
 
 
-    
+/* Contenedor de proyectos */
+
+.contenedor-cards {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
 
 
-  
+/* Tarjeta */
 
-/*AQUI VA LAS MODIFICACIONES VISUALES PARA EL CONTACTO */
-
-.contacto{
-    padding: 50px 1%; /*1% es la distancia entre el borde de la pagina con el texto*/
+.card {
+    flex: 1;
+    min-height: 500px;
+    padding: 30px;
+    border: 2px solid var(--color-steam);
+    border-radius: var(--radio);
     text-align: center;
 }
-.contacto h1{
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(236, 238, 236, 0.981);
+}
+
+.card p {
+    color: var(--color-fondo);
+    margin-bottom: 20px;
+}
+
+.card h3 {
     color: white;
+    margin-bottom: 10px;
 }
 
-.contacto{
-    color: var(--color-blanco);
+.card-numero {
+    display: block;
+    color: grey;
+    margin-bottom: 10px;
 }
 
 
+/* =====================================================
+   IMAGEN DEL PROYECTO
+   ===================================================== */
 
-/*FORMULARIO*/
+.imagen-proyecto {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+}
 
-.formulario{
-    min-height: 500px;/*profundidad del cuadro*/
-    padding: 30px; /*distancia entre el cuadro con el texto*/
-    border-radius: var(--radio);     
+
+/* =====================================================
+   BOTÓN PROYECTO
+   ===================================================== */
+
+.boton-proyecto {
+    display: inline-block;
+    color: white;
+    padding: 10px 18px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.boton-proyecto:hover {
+    background-color: rgb(18, 17, 17);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 8px rgba(18, 17, 17, 0.416);
+}
+
+
+/* =====================================================
+   CONTACTO / FORMULARIO
+   ===================================================== */
+
+.formulario {
+    color: white;
+    text-align: center;
+    min-height: 30%;
+    padding: 70px;
+    border-radius: var(--radio);
     box-shadow: 0 4px 14px rgba(26, 28, 26, 0.7);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.campo{
+
+/* Campos */
+
+.campo {
     margin-bottom: 18px;
     text-align: center;
 }
 
-label{
+label {
     display: block;
+    color: white;
     margin-bottom: 6px;
     font-weight: bold;
 }
 
 
+/* Input y textarea */
 
-/*configuracion de las letras dentro de la caja
-configurado para adaptarse a moviles */
 input,
-textarea{
+textarea {
     width: 100%;
     max-width: 500px;
     padding: 11px;
@@ -367,27 +343,24 @@ textarea{
     border-radius: 8px;
     font: inherit;
     outline: none;
-    box-sizing: border-box;
-
 }
 
-input:focus,
-textarea:focus{
-    border-color: white;
-}
-textarea{
+textarea {
     min-height: 70px;
     resize: vertical;
 }
 
 
+/* =====================================================
+   VALIDACIONES
+   ===================================================== */
 
 .invalido {
     border-color: #dc2626;
     background: white;
 }
 
-.error{
+.error {
     display: block;
     min-height: 18px;
     margin-top: 5px;
@@ -395,49 +368,67 @@ textarea{
     font-size: 0.82rem;
 }
 
-button{
-    width: 27%;
-    padding: 12px;
+
+/* =====================================================
+   BOTÓN DEL FORMULARIO
+   ===================================================== */
+
+button {
+    width: 20%;
+    padding: 15px;
     border: 0;
     border-radius: 8px;
     color: white;
     background: blue;
-    font: inherit; /*amplia el formato*/
-    font-weight: bold; /*aumenta el tamaño del texto*/
-
+    font: inherit;
+    font-weight: bold;
 }
 
-button:hover{
-    background: grey;/*cambia a gris al pasar el cursor*/
+button:hover {
+    background: grey;
 }
 
-.resultado{
+
+/* =====================================================
+   RESULTADO DEL FORMULARIO
+   ===================================================== */
+
+.resultado {
     display: none;
     margin-top: 18px;
     padding: 12px;
     border-radius: 8px;
 }
 
-.resultado.visible{
+.resultado.visible {
     display: block;
 }
 
 
-.footer{
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.footer {
     color: white;
 }
 
 
-/*configuracion para adaptarse a moviles */
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
 @media (max-width: 768px) {
 
     .encabezado {
         flex-direction: column;
+
         gap: 15px;
     }
 
     .nav {
         flex-wrap: wrap;
+
         justify-content: center;
     }
 
@@ -459,7 +450,5 @@ button:hover{
 
     .card {
         width: 100%;
-        box-sizing: border-box;
     }
-
 }

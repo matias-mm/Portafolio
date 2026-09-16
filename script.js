@@ -17,7 +17,7 @@ function mostrarError(campo, texto){
     campo.classList.add("invalido");
 
     const error = document.querySelector(
-        `#error ${campo.id.charAt(0).toUpperCase() + campo.id.slice(1)}`
+        `#error${campo.id.charAt(0).toUpperCase() + campo.id.slice(1)}`
     );
 
     error.textContent = texto;
@@ -31,7 +31,7 @@ function limpiarError(campo){
     campo.classList.remove("invalido");
 
     const error = document.querySelector(
-        `#error ${campo.id.charAt(0).toUpperCase() + campo.id.slice(1)}`
+        `#error${campo.id.charAt(0).toUpperCase() + campo.id.slice(1)}`
     );
     error.textContent = "";
 }
@@ -63,13 +63,14 @@ formulario.addEventListener("submit", function(evento){
     }
 
     //Validar correo
-    const expresionCorreo = "/^[^\s@]+@[^\s@]+\.[^\s@]+$/";
+    const expresionCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if(!expresionCorreo.test(correoValor)){
         mostrarError(
             correo,
             "Ingresar un correo valido."
         );
+        formularioValido = false;
     }else{
         limpiarError(correo);
     }
@@ -83,6 +84,8 @@ formulario.addEventListener("submit", function(evento){
         );
 
         formularioValido = false;   
+    }else{
+        limpiarError(mensaje);
     }
 
     // si hay errores se detiene el formulario
@@ -104,10 +107,3 @@ formulario.addEventListener("submit", function(evento){
 
 
 
-
-
-/*        evento.preventDefault();
-        resultado.classList.remove("visible");
-        return; //finaliza
-    }
- */
